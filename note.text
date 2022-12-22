@@ -1,0 +1,88 @@
+Server Creation
+---------------
+
+install express
+            - npm i express
+
+1.import express
+2.create an app using express
+3.create port number (3000)
+4.create request according to our project
+
+nodemon Server
+---------------
+
+ - npm i -g nodemon
+
+ user Authentication using express
+ ---------------------------------
+
+ JWT(json web token) token
+ -------------------------
+ jsonwebtoken   -library
+ sign()         -method used for generate token
+ verify()       -verify method of jwt
+ 
+
+ Middlewares
+ -----------
+-Middlewares have the cappacity to control server request
+-its a function with 3 arguments    (request,response,next)
+
+-two types 
+    1.Application specific Middlewares
+    2.Router specific Middlewares
+
+
+
+Solveing runtime errors in js
+-----------------------------
+try catch
+try{
+    error causes code 
+}
+catch{
+    solution
+}
+
+
+Mongo DB
+--------
+-mongodb server
+-shell commands
+    
+    -to see the database
+        -> show db
+
+    -open database
+        -> use database_ame
+
+    -view collection inside database
+        -> show colllection
+    
+    -to view data inside collection
+        -> bd.colllection_name.find()
+
+    -to view any single data inside collections
+        -> db.collection_name.findOne({unique data to identify})
+
+    -to insert new data 
+        -> db colllection_name.insertOne({data})
+
+    -to view a sinle data according to a condition
+        -> db collection_name.findOne({condition})     single data
+        -> db collection_name.find({condition})        all data
+
+    -delete
+        -> delete single data 
+            -> b.colllection_name.deleteOne({data})
+            -delete count=number
+            -delete count=0     if nothing deleted
+
+    -update
+        ->db.collection_name.updateOne({data to be update},{new data})
+                                      ({uname:'anu'}.{uname'anu v'})
+
+
+
+crude -create read  update delete 
